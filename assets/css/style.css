@@ -73,20 +73,17 @@ header {
 
 /* Navigation */
 nav {
-  padding-top: 100px;
   text-align: left;
+  margin-bottom: 5%;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 50px;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  margin-right: 30px;
 }
 
 nav ul li a {
@@ -94,25 +91,21 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.2em;
   transition: color 0.3s;
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
 }
 
 nav ul li a:hover {
   color: lightblue;
 }
 
-
 /* Sections */
 section {
-  display: flex;
-  flex-wrap: wrap;
   padding: 40px;
   background: white;
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
   font-size: 1.5em;
 }
 
