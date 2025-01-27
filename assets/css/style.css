@@ -1,0 +1,201 @@
+
+:root{
+  --yellow: #f4b400;
+  --Blue: #0610969d;
+  --lightblue: lightblue;
+  --headcolor: var(--Blue);
+  --bodycolor: var(--lightblue);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/Images/AI_brain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.849);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Header Content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 1000px;
+}
+
+/* Header Text */
+.header-text {
+  /* background-color: aqua; */
+  text-align: left;
+}
+.header-text h1 {
+  font-size: 4em;
+}
+.header-text p {
+  font-size: 1.5em;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 200px;
+    height: 300px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid var(--bodycolor);
+    margin-left: 20px;
+    
+}
+
+/* Navigation */
+nav {
+  padding-top: 40px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+}
+
+
+/* Sections */
+section {
+  padding: 40px;
+  background: white;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  font-size: 1.5em;
+}
+
+h2 {
+  color: #222;
+  border-bottom: 3px solid var(--bodycolor);
+  padding-bottom: 10px;
+}
+
+/* Education Section */
+.edu {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--bodycolor);
+}
+
+/* Skills Section */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.skill-box {
+  background: #fffefe;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid var(--bodycolor);
+  text-align: center;
+}
+
+.skill-box h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: left;
+}
+.skill-box p {
+  background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Experience Section */
+.job {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--bodycolor);
+}
+
+.job h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Contact Section */
+#contact a {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: lightblue;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
