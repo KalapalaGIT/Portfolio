@@ -27,37 +27,43 @@ body {
 /* Header */
 header {
   background: rgba(0, 0, 0, 0.849);
-  color: white;
-  padding: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+  color: white;
+  text-align: left;
+  min-height: 150px;
 }
 
 /* Header Content */
 .header-content {
+  /* background-color: aqua; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 60%;
-  max-width: 1000px;
+  margin-left: 15%;
 }
 
 /* Header Text */
 .header-text {
-  /* background-color: aqua; */
   text-align: left;
 }
 .header-text h1 {
-  font-size: 4em;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  flex-grow: 1;
 }
 .header-text p {
-  font-size: 1.5em;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  flex-grow: 1;
 }
 
 /* Profile Picture */
 .profile-pic {
-  width: 200px;
-    height: 300px;
+  max-width: clamp(80px, 15vw, 200px);
+    height: auto;
     border-radius: 20%;
     object-fit: cover;
     border: 3px solid var(--bodycolor);
@@ -67,9 +73,8 @@ header {
 
 /* Navigation */
 nav {
-  padding-top: 40px;
+  padding-top: 100px;
   text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -81,6 +86,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 50px;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 nav ul li a {
@@ -97,6 +103,8 @@ nav ul li a:hover {
 
 /* Sections */
 section {
+  display: flex;
+  flex-wrap: wrap;
   padding: 40px;
   background: white;
   margin: 20px auto;
@@ -197,5 +205,27 @@ footer {
 
   section {
     padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 5%;
+  }
+  
+  .profile-pic {
+    margin-top: 10px;
+    /* max-width: 120px; */
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+       /* Change to single-column */
+  }
+  
+  .job {
+    padding: 10px;
+    font-size: 0.9em;
+       /* Reduce text size */
   }
 }
